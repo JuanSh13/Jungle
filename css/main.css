@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+  font-family: 'Poppins', sans-serif;
+
+  scroll-behavior: smooth;
+}
+body {
+  min-height: 100vh;
+
+  background: #fff;
+
+  overflow-x: hidden;
+}
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100000;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  padding: 30px 100px;
+}
+
+header .logo {
+  color: #094b65;
+  font-size: 2em;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+header .navigation-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .navigation-list li {
+  margin-left: 20px;
+
+  list-style: none;
+}
+header .navigation-list li a {
+  padding: 6px 15px;
+  border-radius: 20px;
+
+  color: #094b65;
+  text-decoration: none;
+}
+header .navigation-list li a:hover, header 
+.navigation-list li a.active { 
+  background: #094b65;
+
+  color: #fff;
+  transition: all .5s;
+}
+
+/* Home */
+.home {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100vh;
+}
+.home::before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+
+  width: 100%;
+  height: 100px;
+
+  background: linear-gradient(to top, #094b65, transparent);
+
+  content: '';
+}
+.home img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  pointer-events: none;
+}
+.home h2 {
+  position: absolute;
+
+  color: #094b65;
+  font-family: 'Rancho', sans-serif;
+  font-size: 10vw;
+  line-height: 0.55em;
+  text-align: center;
+
+  transform: translateY(-50%);
+}
+.home h2 span {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.20em;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.button-layout {
+  display: inline-block;
+
+  padding: 8px 30px;
+  border-radius: 40px;
+
+  color: #094b65;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-decoration: none;
+
+  background: #fff;
+
+  transform: translateY(100px);
+}
+
+.scroll {
+  position: relative;
+
+  padding: 100px;
+
+  background: #094b65;
+}
+.scroll h2 {
+  margin: 10px;
+
+  color: #fff;
+  font-size: 3.5em;
+}
+.scroll p {
+  color: #fff;
+  font-size: 1em;
+}
